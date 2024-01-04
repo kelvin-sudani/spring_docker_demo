@@ -1,0 +1,14 @@
+version: '3.1'
+services:
+  db:
+    image: mysql:8.0
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: spring
+      MYSQL_DATABASE: spring_docker_demo
+      MYSQL_USER: spring
+      MYSQL_PASSWORD: spring
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/spring_docker_demo
+      SPRING_DATASOURCE_USERNAME: spring
+      SPRING_DATASOURCE_PASSWORD: spring
