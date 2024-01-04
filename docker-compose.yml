@@ -12,3 +12,5 @@ services:
       SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/spring_docker_demo
       SPRING_DATASOURCE_USERNAME: spring
       SPRING_DATASOURCE_PASSWORD: spring
+    volumes:
+        - ./mysql_init_script.sql:/docker-entrypoint-initdb.d/init_script.sql

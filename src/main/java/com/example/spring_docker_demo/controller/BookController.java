@@ -26,4 +26,21 @@ public class BookController {
         return bookRepository.findAll();
     }
 
+
+    @PutMapping("/{id}")
+    public Book updateBook(@PathVariable Long id, @RequestBody Book bookDetails) {
+        Book book = bookRepository.findById(id).orElseThrow(() -> new RuntimeException("Book not found"));
+        book.setTitle(bookDetails.getTitle());
+        book.setYear(bookDetails.getYear());
+        // Update other fields as necessary
+        return bookRepository.save(book);
+    }
+
+    @DeleteMapping("/{id}")
+    public void deleteBook(@PathVariable Long id) {
+        Book book = bookRepository.findById(id).orElseThrow(() -> new RuntimeException("Book not found"));
+        bookRepository.delete(book);
+    }
+
+
 }
