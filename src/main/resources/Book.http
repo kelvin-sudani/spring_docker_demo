@@ -1,0 +1,32 @@
+###
+POST http://localhost:8080/books
+Content-Type: application/json
+
+{
+  "id": 0,
+  "author": {},
+  "title": "",
+  "year": 0,
+  "genre": {},
+  "tags": []
+}
+
+###
+GET http://localhost:8080/books
+
+
+###
+PUT http://localhost:8080/books/{{id}}
+Content-Type: application/json
+
+{
+  "id": 0,
+  "author": {},
+  "title": "",
+  "year": 0,
+  "genre": {},
+  "tags": []
+}
+
+###
+DELETE http://localhost:8080/authors/{{id}}

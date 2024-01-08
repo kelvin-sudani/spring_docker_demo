@@ -1,0 +1,26 @@
+###
+POST http://localhost:8080/tags
+Content-Type: application/json
+
+{
+  "name": "",
+  "books": []
+}
+
+###
+GET http://localhost:8080/tags
+
+###
+GET http://localhost:8080/tags/{{id}}
+
+###
+PUT http://localhost:8080/tags/{{id}}
+Content-Type: application/json
+
+{
+  "name": "",
+  "books": []
+}
+
+###
+DELETE http://localhost:8080/tags/{{id}}

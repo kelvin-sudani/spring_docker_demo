@@ -1,4 +1,4 @@
-package com.example.spring_docker_demo.entities;
+package com.example.spring_docker_demo.entity;
 
 
 import com.fasterxml.jackson.annotation.JsonBackReference;

@@ -1,6 +1,6 @@
 package com.example.spring_docker_demo.controller;
 
-import com.example.spring_docker_demo.entities.Genre;
+import com.example.spring_docker_demo.entity.Genre;
 import com.example.spring_docker_demo.repository.GenreRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

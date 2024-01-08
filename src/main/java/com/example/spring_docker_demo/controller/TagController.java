@@ -1,6 +1,6 @@
 package com.example.spring_docker_demo.controller;
 
-import com.example.spring_docker_demo.entities.Tag;
+import com.example.spring_docker_demo.entity.Tag;
 import com.example.spring_docker_demo.repository.TagRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

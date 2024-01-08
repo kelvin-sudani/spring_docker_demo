@@ -1,0 +1,26 @@
+###
+POST http://localhost:8080/genres
+Content-Type: application/json
+
+{
+  "id": 0,
+  "name": ""
+}
+
+###
+GET http://localhost:8080/genres
+
+###
+GET http://localhost:8080/genres/{{id}}
+
+###
+PUT http://localhost:8080/genres/{{id}}
+Content-Type: application/json
+
+{
+  "id": 0,
+  "name": ""
+}
+
+###
+DELETE http://localhost:8080/genres/{{id}}

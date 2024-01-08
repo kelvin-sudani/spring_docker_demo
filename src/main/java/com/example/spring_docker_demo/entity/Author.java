@@ -1,5 +1,6 @@
-package com.example.spring_docker_demo.entities;
+package com.example.spring_docker_demo.entity;
 
+import com.example.spring_docker_demo.DTO.BookDTO;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 
@@ -20,4 +21,6 @@ public class Author {
  @OneToMany(cascade = CascadeType.ALL, mappedBy = "author")
  @JsonManagedReference
  private List<Book> books;
+
+
 }
